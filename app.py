@@ -99,5 +99,5 @@ if ask:
             prompt=prompt
             
         )
-        res = chain.predict(callbacks=[handler],kwargs={'goal':goal, 'theme':theme, 'direction':direction})
+        res = chain(input={'goal':goal, 'theme':theme, 'direction':direction})
     
