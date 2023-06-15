@@ -1,7 +1,7 @@
 import streamlit as st
-theme = st.text_input('考えるテーマ')
+theme = st.text_input('シードアイデア')
 goal = st.text_input('ゴール')
-direction_input = st.selectbox('考える内容',['what','how','imagine'])
+direction_input = st.selectbox('考える内容',['imagine','how','what'])
 direction_message = {
     'what':'何が必要か',
     'how': 'どんな方法があるか',
