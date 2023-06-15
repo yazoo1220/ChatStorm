@@ -96,8 +96,8 @@ if ask:
         chat = ChatOpenAI(streaming=True, temperature=0.9)
         chain = LLMChain(
             llm=chat, 
-            prompt=prompt,
-            callbacks=[handler]
+            prompt=prompt
+            
         )
-        res = chain(inputs={'goal':goal, 'theme':theme, 'direction':direction})
+        res = chain.predict(callbacks=[handler],kwargs={'goal':goal, 'theme':theme, 'direction':direction})
     
