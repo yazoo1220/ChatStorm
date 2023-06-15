@@ -99,5 +99,5 @@ if ask:
             prompt=prompt,
             callbacks=[handler]
         )
-        res = chain(inputs=[goal, theme, direction]})
+        res = chain(inputs={'goal'=goal, 'theme'=theme, 'direction'=direction})
     
