@@ -99,5 +99,5 @@ if ask:
             prompt=prompt
             
         )
-        res = chain(input={'goal':goal, 'theme':theme, 'direction':direction})
+        res = chain(inputs={'goal':goal, 'theme':theme, 'direction':direction})
     
