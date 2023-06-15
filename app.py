@@ -100,4 +100,4 @@ if ask:
             
         )
         res = chain(inputs={'goal':goal, 'theme':theme, 'direction':direction})
-        c1.markdown(res)
+        c1.markdown(res['text'])
