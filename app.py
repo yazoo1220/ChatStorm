@@ -1,4 +1,6 @@
 import streamlit as st
+idea = st.text_input('中心となるアイデア')
+goal = st.text_input('ゴール')
 
 left, center, right = st.columns(3)
 
@@ -19,9 +21,11 @@ with right:
   
   
 frame = '''
-    |||
-    |||
-    |||
+    | | | |
+    | | | |
+    | | | |
 '''
 
 c1.markdown(frame)
+
+
