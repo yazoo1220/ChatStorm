@@ -91,7 +91,7 @@ class SimpleStreamlitCallbackHandler(BaseCallbackHandler):
 handler = SimpleStreamlitCallbackHandler()
 
 if ask:
-    with c1.spinner('typing...'):
+    with st.spinner('typing...'):
         report = []
         chat = ChatOpenAI(streaming=True, temperature=0.9)
         chain = LLMChain(
