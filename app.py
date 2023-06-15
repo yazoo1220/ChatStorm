@@ -11,7 +11,7 @@ direction = direction_message[direction_input]
 st.write(direction)
 ask = st.button('ブレスト開始',type='primary')
          
-left, center, right = st.columns(3)
+left, center, right = st.columns([0.33,0.33,0.34])
 
 with left:
     l1 = st.empty()
