@@ -28,8 +28,17 @@ with right:
     r2 = st.empty()
     r3 = st.empty()
   
-  
 frame = f'''
+
+|    |        |       |
+|----|--------|-------|
+|    |        |       |
+|    |        |       |
+|    |        |       |
+
+'''
+  
+center_frame = f'''
 
 |    |        |       |
 |----|--------|-------|
@@ -39,7 +48,9 @@ frame = f'''
 
 '''
 
-c1.markdown(frame)
+l1.markdown(frame)
+c1.markdown(center_frame)
+r1.markdown(frame)
 
 
          
